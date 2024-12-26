@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>treasure warehouse</title>
+
+<script type="text/javascript">
+function val()
+	{
+	var a= document.al.aid.value;
+	var b= document.al.ap.value;
+	if(a=="")
+	{
+	alert("enter User Id")
+	document.al.aid.focus();
+	return false;
+	}
+	if(b=="")
+	{
+	alert("enter password")
+	document.al.ap.focus();
+	return false;
+	}
+	}
+	function vali()
+	{
+	var a1= document.ul.uid.value;
+	var b1= document.ul.up.value;
+	if(a1=="")
+	{
+	alert("enter Account No")
+	document.ul.uid.focus();
+	return false;
+	}
+	if(isNaN(a1))
+	{
+	alert("enter valid Account No")
+	document.ul.uid.focus();
+	return false;
+	}
+	if(b1=="")
+	{
+	alert("enter Pin No")
+	document.ul.up.focus();
+	return false;
+	}
+	if(isNaN(b1))
+	{
+	alert("enter valid Pin No")
+	document.ul.up.focus();
+	return false;
+	}
+	}
+
+
+</script>
+<style type="text/css">
+
+.b1
+{
+background-color: #color;
+border-bottom:solid;
+border-left: #FFEEEE;
+border-right:solid;
+border-top: #EEEEEE;
+color: brown;
+font-family: Verdana, Arial
+
+}
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body><table width="967" height="638" align="center">
+<tr bgcolor="#6666FF">
+    <td height="150" background="images/bank_header2.jpeg" colspan="2"><strong><font color="#FFFFFF" size="+2">&nbsp&nbsp&nbsp;NEW 
+      BANK OF INDIA</font></strong></td>
+  </tr>
+
+<tr>
+    <td height="60" bgcolor="#5970B2" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><font color="#00FFCC" size="+1">Home</font></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="new_acc.jsp"><strong><font color="#00FFFF" size="+1">New Account</font></strong></a>&nbsp;
+    </td>
+</tr>
+<tr>
+  
+  </tr>
+  <tr>
+ 
+    <td width="348" height="225" bgcolor="#E1FFFF"><form name="al" method="get" action="admin_login.jsp" onSubmit="return val()">
+        <table width="314" height="157" bgcolor="#FFFFDF" align="center" cellpadding="5" cellspacing="5" style="border:1px solid #d2d2d2">
+          <tr> 
+            <td  height="25" align="center" colspan="3"><strong><font color="#800000" size="+1">Banker 
+              Login</font></strong></td>
+          </tr>
+          <tr> 
+            <td width="16" height="24"><img src="images/arrow.jpg"></td>
+            <td width="112" align="center"><img src="images/user.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="+1">User 
+              Id</font></td>
+            <td width="134" align="center"><input type="text" size="12" name="aid"></td>
+          </tr>
+		  <tr> 
+            <td width="16" height="39"><img src="images/arrow.jpg"></td>
+            <td align="center"><img src="images/pass.jpg">&nbsp;&nbsp;&nbsp;&nbsp;<font size="+1">Password</font></td>
+            <td align="center"><input type="password" size="12" name="ap"></td>
+          </tr>
+		   <tr> 
+            <td height="27"></td>
+			<td></td>
+            <td  align="center"><input type="submit" name="sub" value="login" class="b1"></td>
+			   
+          </tr>
+         
+        </table>
+      </form></td>
+    <td width="500" 300 rowspan="2" bgcolor="#E1FFFF" align="center"><img src="images/money_tree1.png"></td>
+  </tr>
+  <tr>
+  
+    <td width="348" height="250" bgcolor="#E1FFFF"><form name="ul" method="get" action="user_login.jsp" onSubmit="return vali()">
+        <table width="306" height="157" bgcolor="#FFFFDF" align="center" cellpadding="5" cellspacing="5" style="border:1px solid #d2d2d2">
+          <tr> 
+            <td  height="25" align="center" colspan="3"><strong><font color="#800000" size="+1">Customer
+              Login</font></strong></td>
+          </tr>
+          <tr> 
+            <td width="15" height="24"><img src="images/arrow.jpg"></td>
+            <td width="140" align="center"><img src="images/user.jpg">&nbsp;&nbsp;<font color="#330000" size="+1">Account 
+              No</font></td>
+            <td width="99" align="center"><input type="text" size="12" name="uid"></td>
+          </tr>
+		  <tr> 
+            <td width="15" height="39"><img src="images/arrow.jpg"></td>
+            <td align="center">&nbsp;<img src="images/pass.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#330000" size="+1">Pin 
+              No</font></td>
+            <td align="center"><input type="password" size="12" name="up"></td>
+          </tr>
+		   <tr> 
+            <td height="27"></td>
+			<td></td>
+            <td  align="center"><input type="submit" name="sub" value="login" class="b1"></td>
+			   
+          </tr>
+         
+        </table>
+      </form></td>
+  </tr><tr>
+    <td bgcolor="#5970B2" height="45" colspan="2" align="center"><strong><font color="#00FFFF">Chennaisunday 
+      Systems Pvt Ltd.<br />Phone:9566137117</font></strong></td>
+  </tr>
+</table>
+<div style="clear:both"></div>
+</body>
+</html>
